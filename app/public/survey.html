@@ -16,6 +16,9 @@
   <!-- Chosen -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+  
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
@@ -65,7 +68,7 @@
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
-    <h3><strong>Question 4</strong></h3>
+    <!-- <h3><strong>Question 4</strong></h3>
     <h4>Your travel plans are usually well thought out.</h4>
     <select class="chosen-select" id="q4">
       <option value=""></option>
@@ -134,7 +137,7 @@
       <option value="3">3</option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
-    </select>
+    </select> -->
 
     <!-- Submit Button -->
     <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
@@ -163,7 +166,7 @@
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-          <img id="match-img" src="">
+          <img id="match-img">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -216,6 +219,9 @@
             $("#q10").val()
           ]
         };
+
+        $(".chosen-select").val("")
+        $(".form-control").val("")
 
         // AJAX post the data to the friends API.
         $.post("/api/friends", userData, function (data) {
