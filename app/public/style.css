@@ -1,0 +1,13 @@
+* {
+  box-sizing:border-box;
+}
+
+.container {
+background-color: aliceblue;
+color: purple;
+
+}
+
+h1 {
+  text-align: center;
+}
