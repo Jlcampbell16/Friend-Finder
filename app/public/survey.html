@@ -16,8 +16,8 @@
   <!-- Chosen -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-  
-  
+
+
   <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -138,7 +138,7 @@
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
-
+    <br>
     <!-- Submit Button -->
     <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
         aria-hidden="true"></i>
@@ -192,7 +192,6 @@
         });
 
         $(".chosen-select").each(function () {
-
           if ($(this).val() === "") {
             isValid = false;
           }
